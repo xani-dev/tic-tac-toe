@@ -3,7 +3,7 @@ import '../Styles/Squares.css';
 
 export const Square = ({ takeTurn, id }) => {
 	const playerMark = ['O', 'X'];
-	const [filled, setFilled] = useState(false);
+	const [squareFilled, setSquareFilled] = useState(false);
 	const [tik, setTik] = useState(2);
 	return (
 		<>
@@ -11,7 +11,7 @@ export const Square = ({ takeTurn, id }) => {
 				className={tik === '1' ? 'pink' : 'blue'}
 				onClick={() => {
 					setTik(takeTurn(id));
-					setFilled(true);
+					setSquareFilled(true);
 				}}
 			>
 				<h2>{playerMark[tik]}</h2>
