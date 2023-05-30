@@ -1,0 +1,13 @@
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: blue;
+}
+
+button {
+    padding: 2rem;
+    margin:1rem;
+    border-radius: 10px;
+}
